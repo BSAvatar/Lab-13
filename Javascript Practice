@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 13: Javascript Practice</title>
+
+        <script>
+        function changeStyle() {
+            var creati = document.getElementById("myPara");
+            creati.style.color = "teal";
+            creati.style.fontSize = "500%";
+
+        var secretCreati = document.getElementById("secretPara");
+        secretCreati.textContent = "This is the hidden secret message. My button press is all powerful";
+        secretCreati.style.color = "red";
+        secretCreati.style.fontSize = "500%";
+        }
+        </script>
+
+    </head>
+
+  <body>
+    <p id="myPara">This is a p element that is being manipulated by the button below it.</p>
+    <button onclick="changeStyle()">Ultimate Style Changer</button>
+    <p id="secretPara">.</p>
+
+  </body>
+</html>
